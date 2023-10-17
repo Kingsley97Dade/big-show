@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Alpha Sneakers</title>
+	<link rel="stylesheet" href="Alpha Sneakers.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,900;1,200;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="Alpha Sneakers logo.png" type='image/x-icon'/>
+</head>
+<body>
+	
+	<div class="header">
+        <div class="container">
+	        <div class="navbar">
+		        <div class="logo">
+			        <a href="Alpha Sneakers Home.html"><img src="Alpha logo.png" width="175px"></a>
+			    </div>
+			    <nav>
+			        <ul id="MenuItems">
+				        <li><a href="Alpha Sneakers Home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+			            <li><a href="Alpha Information.html"><i class="fa fa-info-circle" aria-hidden="true"></i>About Us</a></li>
+			            <li><a href="Alpha Products Page 1.html"><i class="fa fa-product-hunt" aria-hidden="true"></i>Products</a></li>					
+					    <li><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+					    <li class="active"><a href="alpha account.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Account</a></li>
+				    </ul>
+			    </nav>
+			    <a href="Alpha Sneakers Cart.html"><img src="shopping-cart-icon-free-download-png-and-vector-cart-icon-png-256_256.png" width="30px" height="30px"></a>
+			    <img src="menu icon.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+	    </div>
+	</div>
+
+<!----------account-page---------->
+
+    <div class="account-page">
+        <div class="container">
+	        <div class="form-box">
+		        <div class="button-box">
+				    <div id="btn"></div>
+			        <button type="button" class="toggle-btn" onclick="login()">Sign In</button>
+				    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+			    </div>
+				<form id="LoginForm" class="input-group">
+				    <input type="text" class="input-field" placeholder="Username" required>
+					<input type="password" class="input-field" placeholder="Password" required>
+					<input type="checkbox" class="check-box"><span>Remember Me</span>
+					<button type="submit" class="submit-btn">Sign In</button>
+				</form>
+				<form id="RegForm" class="input-group">
+				    <input type="text" class="input-field" placeholder="Username" required>
+					<input type="email" class="input-field" placeholder="Email" required>
+					<input type="password" class="input-field" placeholder="Password" required>
+					<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+					<button type="submit" class="submit-btn">Register</button>
+				</form>
+		    </div>
+	    </div>
+    </div>
+   
+    		
+<!---------- footer -------->
+    <div class="footer">
+        <div class="container">
+	        <div class="row">
+		        <div class="footer-col-1">
+			        <h3>Download Our App</h3>
+				    <p>Download App for Android and ios.</p>
+					<div class="app-logo">
+					    <img src="google play store logo.png">
+						<img src="apple app store 1.png">
+					</div>
+		 	    </div>
+			    <div class="footer-col-2">
+			        <img src="Alpha logo.png">
+				    <p>Our purpose is to provide quality and affordable accessories for the ladies.</p>
+			    </div>
+			    <div class="footer-col-3">
+			        <h3>Useful Links</h3>
+				    <ul>
+				        <li>Coupons</li>
+					    <li>Blog Post</li>
+					    <li>Return Policy</li>
+					    <li>Join Affiliates</li>
+				    </ul>
+			    </div>
+			    <div class="footer-col-4">
+			        <h3>Connect With Us</h3>
+				    <ul>
+				        <li><i class="fa fa-facebook-official" aria-hidden="true"></i>Alpha Sneakers</li>
+					    <li><i class="fa fa-instagram" aria-hidden="true"></i>alpha_sneakers_</li>
+					    <li><i class="fa fa-whatsapp" aria-hidden="true"></i>+233246959650</li>
+					    <li><i class="fa fa-phone" aria-hidden="true"></i>0544482692</li>
+				    </ul>
+			    </div>
+		    </div>
+			<hr>
+			<p class="copyright">Copyright &copy; 2020 Alpha Sneakers</p>
+			</hr>
+	    </div>	
+	</div>
+	
+
+<!----------js for toggle menu --------->
+    <script>
+	    var MenuItems = document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight = "0px";
+		
+		function menutoggle()
+		{
+		    if(MenuItems.style.maxHeight == "0px")
+			    {
+			        MenuItems.style.maxHeight = "200px";
+			    }
+			    else
+				{
+				    MenuItems.style.maxHeight = "0px";
+			    }
+		}
+	</script>
+	
+<!----------js for toggle Form--------->
+
+    <script>
+	
+	    var x = document.getElementById("LoginForm");
+		var y = document.getElementById("RegForm");
+		var z = document.getElementById("btn");
+		
+			function register(){
+			
+			    x.style.left = "-400px";   
+			    y.style.left = "50px";
+				z.style.left = "110px";	
+			}
+			
+			function login(){
+			
+			    x.style.left = "50px";   
+			    y.style.left = "450px";
+				z.style.left = "0px";
+			}
+		
+	</script>	
+	
+</body>
+</html>
